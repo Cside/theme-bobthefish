@@ -992,15 +992,15 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
   set -l __bobthefish_vagrant_unknown_glyph   '!'    # strange cases
 
   # Git glyphs
-  set -l __bobthefish_git_dirty_glyph      '*'
-  set -l __bobthefish_git_staged_glyph     '~'
-  set -l __bobthefish_git_stashed_glyph    '$'
-  set -l __bobthefish_git_untracked_glyph  '…'
+  set -l __bobthefish_git_dirty_glyph      '(dirty)'
+  set -l __bobthefish_git_staged_glyph     '(staged)'
+  set -l __bobthefish_git_stashed_glyph    '(stashed)'
+  set -l __bobthefish_git_untracked_glyph  '(untracked)'
   set -l __bobthefish_git_ahead_glyph      \u2191 # '↑'
   set -l __bobthefish_git_behind_glyph     \u2193 # '↓'
-  set -l __bobthefish_git_plus_glyph       '+'
-  set -l __bobthefish_git_minus_glyph      '-'
-  set -l __bobthefish_git_plus_minus_glyph '±'
+  set -l __bobthefish_git_plus_glyph       '(unpushed)'
+  set -l __bobthefish_git_minus_glyph      '(unpulled)'
+  set -l __bobthefish_git_plus_minus_glyph '(unpulled)(unpushed)'
 
   # Disable Powerline fonts
   if [ "$theme_powerline_fonts" = "no" ]
